@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Box, Text } from '@chakra-ui/react'
-import { Link, Page } from '@/components'
+import { Banner, Link, Page } from '@/components'
 import { SITE_NAME } from '../../constants'
 
 const Home: FC = () => (
@@ -8,6 +8,7 @@ const Home: FC = () => (
     <Text as="h1" textStyle="h1">
       {SITE_NAME}
     </Text>
+    <Banner />
     <Box as="section">
       <Text>
         <strong>{SITE_NAME}</strong> is an IRL DAO based in Portland, Oregon,
