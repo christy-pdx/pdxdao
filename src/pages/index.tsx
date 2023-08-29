@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Box, Divider, Flex, Icon, Text } from '@chakra-ui/react'
-import { ButtonLink, Link, Page, Section, TextCardWithIcon } from '@/components'
+import { ButtonLink, Link, LocalismBanner, Page, Section, TextCardWithIcon } from '@/components'
 import { SITE_NAME } from '../../constants'
 import { FaMeetup } from 'react-icons/fa'
 import { FaRegGrinBeam, FaGlobe } from 'react-icons/fa'
@@ -8,6 +8,7 @@ import { GiFlexibleStar } from 'react-icons/gi'
 
 const Home: FC = () => (
   <Page title={SITE_NAME} description="An IRL DAO based in Portland, Oregon">
+    <LocalismBanner />
     <Text as="h1" textStyle="h1" mb={16} mt={12}>
       {SITE_NAME}
     </Text>
