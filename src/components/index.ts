@@ -1,4 +1,3 @@
-export * from './Banner'
 export * from './ButtonLink'
 export * from './Fonts'
 export * from './Footer'
