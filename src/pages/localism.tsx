@@ -50,7 +50,6 @@ const Localism = () => (
           <ButtonLink href="https://goo.gl/maps/E4pmDRBsjC8nRDuM6">View on Google Maps</ButtonLink>
           <Text fontWeight="900">Where to Stay</Text>
           <Text>The venue is very central, on the east side of the Willamette River. Airbnb is a great option and there should be plenty of availabilities in the neighborhoods near the venue (Central Eastside Industrial District (CEID), Hawthorne, Ladd&apos;s Addition, etc)</Text>
-          <ButtonLink href="https://goo.gl/maps/E4pmDRBsjC8nRDuM6">View on Google Maps</ButtonLink>
         </Box>
         <Box>
           <Heading textStyle="h2">Getting Around</Heading>
