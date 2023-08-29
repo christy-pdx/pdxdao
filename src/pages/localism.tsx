@@ -59,6 +59,13 @@ const Localism = () => (
           <Text>Portland is well-known for its food and generally artisan quality everything.</Text>
           <Text>For quick eats, there are many food cart pods around the city. The closest to the venue being <Link href="https://goo.gl/maps/55CpzWHsHUHZjBXs6" target="_blank" rel="noopener noreferrer">the Asylum</Link></Text>
         </Box>
+        <Box>
+          <Heading textStyle="h2">Things to Do</Heading>
+          <Text>We&apos;ll coordinate some fun hangs around the city, but feel free to check for local happenings.</Text>
+          <Link>Music Shows</Link>
+          <Link>Art Shows</Link>
+          <Link>Hikes</Link>
+        </Box>
       </Flex>
     </Flex>
   </Page>
