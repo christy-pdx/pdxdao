@@ -22,7 +22,7 @@ const Localism = () => (
           </Flex>
         </Flex>
       </Box>
-      <Flex justify="center" bg="secondary" boxShadow="lg">
+      <Flex justify="center" bg="secondary" boxShadow="lg" w="100vw">
         <Flex
           py={4}
           alignItems="center"
@@ -54,6 +54,8 @@ const Localism = () => (
         <Box>
           <Heading textStyle="h2">Getting Around</Heading>
           <Text>Portland is filled with walkable neighborhoods, and is also very bikeable. An Uber or Lyft can get you anywhere else in a hurry.</Text>
+          <Link href="https://www.pdxbikerentals.com/bicycle-rentals-portland#bike-rentals-portland" target="_blank" rel="noopener noreferrer">Everybody's Bike Rentals</Link>
+          <Link href="https://biketownpdx.com/" target="_blank" rel="noopener noreferrer">Biketown</Link>
         </Box>
         <Box>
           <Heading textStyle="h2">Eats, Drinks, and Hangs</Heading>
