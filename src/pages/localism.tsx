@@ -40,9 +40,6 @@ const Localism = () => (
       </Flex>
       <Flex direction="column" maxW="720px" gap={12}>
         <Box>
-          
-        </Box>
-        <Box>
           <Heading textStyle="h1">Details and Information for Attendees</Heading>
           <Heading textStyle="h2">Location</Heading>
           <Text><strong>Venue: BridgeSpace</strong></Text>
