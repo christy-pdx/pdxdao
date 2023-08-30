@@ -16,7 +16,7 @@ export const Page: FC<PageProps> = ({
 }) => (
   <main>
     <PageMetadata title={title} description={description} image={image} />
-    <Box mx="auto" py={[6, 8]} id="main-content" {...boxProps}>
+    <Box mx="auto" pb={12} id="main-content" {...boxProps}>
       {children}
     </Box>
   </main>

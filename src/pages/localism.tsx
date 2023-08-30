@@ -27,45 +27,55 @@ const Localism = () => (
           py={4}
           alignItems="center"
           position="relative"
+          justifyContent="center"
           direction={[ 'column', null, null, 'row' ]}
-          rowGap={6}
+          gap={6}
           maxW="max"
         >
           <Heading>Applications Open</Heading>
-          <Text>Read up on the goals and format of the Forum, as well as how to apply.</Text>
-          <ButtonLink rel="noopener noreferrer" href="https://mirror.xyz/ethpdx.eth/kjpsLAAC2Si0XDmr_aFp0F5esPNH4DoPB4lOTlFbR5M">
-              Read the article on Mirror
+          <Text m={0}>Our space is lovely but small, so capacity is limited to 100, so please read up on the intention below before applying.</Text>
+          <ButtonLink href="https://mirror.xyz/ethpdx.eth/kjpsLAAC2Si0XDmr_aFp0F5esPNH4DoPB4lOTlFbR5M">
+            Apply Now
           </ButtonLink>
         </Flex>
       </Flex>
       <Flex direction="column" maxW="720px" gap={12}>
+        <Box pt={12}>
+          <Text fontSize="xl">Our intention for this convening is to create a container where the Ethereum community can elaborate for itself, in a plurality of directions, what an experimentalism of the city can mean and look like for web3.</Text>
+          <ButtonLink href="https://mirror.xyz/ethpdx.eth/kjpsLAAC2Si0XDmr_aFp0F5esPNH4DoPB4lOTlFbR5M">Read More</ButtonLink>
+        </Box>
         <Box>
-          <Heading textStyle="h1">Details and Information for Attendees</Heading>
+          <Heading textStyle="h2">Details and Information for Attendees</Heading>
           <Heading textStyle="h2">Location</Heading>
           <Text><strong>Venue: BridgeSpace</strong></Text>
           <Text>133 SE Madison St, Portland, OR 97214</Text>
-          <ButtonLink href="https://goo.gl/maps/E4pmDRBsjC8nRDuM6">View on Google Maps</ButtonLink>
+          <ButtonLink href="https://goo.gl/maps/E4pmDRBsjC8nRDuM6" mb={6}>View on Google Maps</ButtonLink>
           <Text fontWeight="900">Where to Stay</Text>
           <Text>The venue is very central, on the east side of the Willamette River. Airbnb is a great option and there should be plenty of availabilities in the neighborhoods near the venue (Central Eastside Industrial District (CEID), Hawthorne, Ladd&apos;s Addition, etc)</Text>
         </Box>
         <Box>
           <Heading textStyle="h2">Getting Around</Heading>
           <Text>Portland is filled with walkable neighborhoods, and is also very bikeable. An Uber or Lyft can get you anywhere else in a hurry.</Text>
-          <Link href="https://www.pdxbikerentals.com/bicycle-rentals-portland#bike-rentals-portland" target="_blank" rel="noopener noreferrer">Everybody's Bike Rentals</Link>
-          <Link href="https://biketownpdx.com/" target="_blank" rel="noopener noreferrer">Biketown</Link>
+          <Flex direction="column">
+            <Text><strong>Bike Rentals</strong></Text>
+            <Link href="https://www.pdxbikerentals.com/bicycle-rentals-portland#bike-rentals-portland" target="_blank">Everybody&apos;s Bike Rentals</Link>
+            <Link href="https://biketownpdx.com/" target="_blank">Biketown</Link>
+          </Flex>
         </Box>
         <Box>
           <Heading textStyle="h2">Eats, Drinks, and Hangs</Heading>
           <Text>Portland is well-known for its food and generally artisan quality everything.</Text>
           <Text>For quick eats, there are many food cart pods around the city. The closest to the venue being <Link href="https://goo.gl/maps/55CpzWHsHUHZjBXs6" target="_blank" rel="noopener noreferrer">the Asylum</Link></Text>
         </Box>
-        <Box>
+        {/* <Box>
           <Heading textStyle="h2">Things to Do</Heading>
           <Text>We&apos;ll coordinate some fun hangs around the city, but feel free to check for local happenings.</Text>
-          <Link>Music Shows</Link>
-          <Link>Art Shows</Link>
-          <Link>Hikes</Link>
-        </Box>
+          <Flex direction="column">
+            <Link>Music Shows</Link>
+            <Link>Art Shows</Link>
+            <Link>Hikes</Link>
+          </Flex>
+        </Box> */}
       </Flex>
     </Flex>
   </Page>
