@@ -1,5 +1,5 @@
 import { Link } from '@/components'
-import { Box, Flex, type BoxProps, type LinkProps } from '@chakra-ui/react'
+import { Flex, type BoxProps, type LinkProps } from '@chakra-ui/react'
 
 interface IProps extends BoxProps, Pick<LinkProps, 'href'> {
   hideArrow?: boolean
@@ -28,8 +28,12 @@ export const ButtonLink: React.FC<IProps> = ({
         py={2}
         m={0}
         bg="primary"
-        _groupHover={{ bg: 'primary', boxShadow: '4px 4px 0 0 var(--chakra-colors-primaryHover)' }}
+        _groupHover={{
+          bg: 'primary',
+          boxShadow: '4px 4px 0 0 var(--chakra-colors-primaryHover)',
+        }}
         cursor="pointer"
+        whiteSpace="nowrap"
         _after={
           isExternal || hideArrow
             ? {}
