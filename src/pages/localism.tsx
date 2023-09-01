@@ -93,6 +93,8 @@ const Localism = () => (
           <Heading as="h2" textStyle="h2">
             Details and Information for Attendees
           </Heading>
+        </Box>
+        <Box>
           <Heading as="h3" textStyle="h2">
             Location
           </Heading>
