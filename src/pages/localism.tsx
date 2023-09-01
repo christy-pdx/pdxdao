@@ -146,6 +146,14 @@ const Localism = () => (
             </Link>
           </Text>
         </Box>
+        <Box>
+          <Heading as="h2" textStyle="h2">
+            Daily Schedule
+          </Heading>
+          <Text>
+            Coming soon... 👻
+          </Text>
+        </Box>
         {/* <Box>
           <Heading textStyle="h2">Things to Do</Heading>
           <Text>We&apos;ll coordinate some fun hangs around the city, but feel free to check for local happenings.</Text>
