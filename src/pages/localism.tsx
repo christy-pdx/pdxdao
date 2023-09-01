@@ -72,7 +72,7 @@ const Localism = () => (
             Our space is lovely but small, so capacity is limited to 100, so
             please read up on the intention below before applying.
           </Text>
-          <ButtonLink href="https://mirror.xyz/ethpdx.eth/kjpsLAAC2Si0XDmr_aFp0F5esPNH4DoPB4lOTlFbR5M">
+          <ButtonLink href="https://forms.gle/oWP3HZ1hdV8CPWqSA">
             Apply Now
           </ButtonLink>
         </Flex>
