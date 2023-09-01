@@ -16,7 +16,7 @@ export const LocalismBanner = () => (
         October 16th, 2023.
       </Text>
       <ButtonLink
-        href="/localism"
+        href="/localism/"
         whiteSpace="nowrap"
         me={8}
         bg="transparent"
