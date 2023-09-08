@@ -17,6 +17,7 @@ const orange = '#F27200af'
 
 export const Schedule = () => (
   <Flex
+    id="schedule"
     direction="column"
     p={16}
     maxW="min(100vw, var(--chakra-sizes-container-xl))"
