@@ -1,5 +1,6 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/react'
+import { Box, Flex, Heading, Icon, Image, Text } from '@chakra-ui/react'
 import { ButtonLink, Link, Page } from '@/components'
+import { AiOutlineSearch } from 'react-icons/ai'
 
 const Localism = () => (
   <Page title="GFEL" description="A General Forum on Ethereum Localism" pb={32}>
@@ -147,12 +148,29 @@ const Localism = () => (
           </Text>
         </Box>
         <Box>
-          <Heading as="h2" textStyle="h2">
+          <Heading as="h2" textStyle="h2" mb={4}>
             Daily Schedule
           </Heading>
-          <Text>
-            Coming soon... 👻
-          </Text>
+          <Link
+            href="/assets/gfel-schedule.jpeg"
+            isExternal
+            hideArrow
+            data-group
+          >
+            <Box as="span" position="relative" outline="1px solid blue">
+              <Image src="/assets/gfel-schedule.jpeg" alt="Schedule" w="full" />
+              <Icon
+                opacity={0}
+                position="absolute"
+                as={AiOutlineSearch}
+                bottom={2}
+                insetInlineEnd={2}
+                fontSize="xl"
+                transition="opacity 0.2s ease-out"
+                _groupHover={{ opacity: 1, transition: 'opacity 0.2s ease-out' }}
+              />
+            </Box>
+          </Link>
         </Box>
         {/* <Box>
           <Heading textStyle="h2">Things to Do</Heading>
