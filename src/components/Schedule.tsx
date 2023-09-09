@@ -45,7 +45,10 @@ export const Schedule = () => (
     <Flex
       direction={{ base: 'column', lg: 'row' }}
       gap={{ base: 8, lg: 0 }}
-      sx={{ td: { textAlign: 'center', p: 2, borderColor: "black" }, p: { m: 0 } }}
+      sx={{
+        td: { textAlign: 'center', p: 2, borderColor: 'black' },
+        p: { m: 0 },
+      }}
     >
       {/* PRE-FORUM */}
       <Table flex={2}>
