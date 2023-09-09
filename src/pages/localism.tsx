@@ -1,6 +1,5 @@
-import { Box, Flex, Heading, Icon, Image, Text } from '@chakra-ui/react'
+import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 import { ButtonLink, Link, Page, Schedule } from '@/components'
-import { AiOutlineSearch } from "react-icons/ai"
 
 const Localism = () => (
   <Page title="GFEL" description="A General Forum on Ethereum Localism" pb={32}>
@@ -112,34 +111,17 @@ const Localism = () => (
             Industrial District (CEID), Hawthorne, Ladd&apos;s Addition, etc)
           </Text>
         </Box>
-        <Box>
+      </Flex>
+      <Flex direction="column" w="100vw" gap={12} pt={12} px={4}>
+        <Box maxW="720px" w="full" gap={12} pt={12} px={4} mx="auto">
           <Heading as="h2" textStyle="h2" mb={4}>
             Daily Schedule
           </Heading>
-          <Text>
-            Planning is in progress 🔮
-          </Text>
-          <Link
-            href="/assets/gfel-schedule.jpeg"
-            isExternal
-            hideArrow
-            data-group
-          >
-            <Box as="span" position="relative" outline="1px solid blue">
-              <Image src="/assets/gfel-schedule.jpeg" alt="Schedule" w="full" />
-              <Icon
-                opacity={0}
-                position="absolute"
-                as={AiOutlineSearch}
-                bottom={2}
-                insetInlineEnd={2}
-                fontSize="xl"
-                transition="opacity 0.2s ease-out"
-                _groupHover={{ opacity: 1, transition: 'opacity 0.2s ease-out' }}
-              />
-            </Box>
-          </Link>
+          <Text>Planning is in progress 🔮</Text>
         </Box>
+        <Schedule />
+      </Flex>
+      <Flex direction="column" maxW="720px" gap={12} pt={12} px={4}>
         <Box>
           <Heading as="h2" textStyle="h2">
             Getting Around
@@ -186,7 +168,6 @@ const Localism = () => (
         </Box> */}
       </Flex>
     </Flex>
-    <Schedule />
   </Page>
 )
 
