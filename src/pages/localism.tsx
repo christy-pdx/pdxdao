@@ -109,7 +109,7 @@ const Localism = () => (
             The venue is very central, on the east side of the Willamette River.
             Airbnb is a great option and there should be plenty of
             availabilities in the neighborhoods near the venue (Central Eastside
-            Industrial District (CEID), Hawthorne, Ladd&apos;s Addition, etc)
+            Industrial District (CEID), Hawthorne, Ladd's Addition, etc)
           </Text>
         </Box>
         <Box>
@@ -151,7 +151,7 @@ const Localism = () => (
           <Flex direction="column">
             <Text fontWeight="bold">Bike Rentals</Text>
             <Link href="https://www.pdxbikerentals.com/bicycle-rentals-portland#bike-rentals-portland">
-              Everybody&apos;s Bike Rentals
+              Everybody's Bike Rentals
             </Link>
             <Link href="https://biketownpdx.com/">Biketown</Link>
           </Flex>
@@ -177,7 +177,7 @@ const Localism = () => (
         </Box>
         {/* <Box>
           <Heading textStyle="h2">Things to Do</Heading>
-          <Text>We&apos;ll coordinate some fun hangs around the city, but feel free to check for local happenings.</Text>
+          <Text>We'll coordinate some fun hangs around the city, but feel free to check for local happenings.</Text>
           <Flex direction="column">
             <Link>Music Shows</Link>
             <Link>Art Shows</Link>
