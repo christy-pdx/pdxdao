@@ -113,6 +113,34 @@ const Localism = () => (
           </Text>
         </Box>
         <Box>
+          <Heading as="h2" textStyle="h2" mb={4}>
+            Daily Schedule
+          </Heading>
+          <Text>
+            Planning is in progress 🔮
+          </Text>
+          <Link
+            href="/assets/gfel-schedule.jpeg"
+            isExternal
+            hideArrow
+            data-group
+          >
+            <Box as="span" position="relative" outline="1px solid blue">
+              <Image src="/assets/gfel-schedule.jpeg" alt="Schedule" w="full" />
+              <Icon
+                opacity={0}
+                position="absolute"
+                as={AiOutlineSearch}
+                bottom={2}
+                insetInlineEnd={2}
+                fontSize="xl"
+                transition="opacity 0.2s ease-out"
+                _groupHover={{ opacity: 1, transition: 'opacity 0.2s ease-out' }}
+              />
+            </Box>
+          </Link>
+        </Box>
+        <Box>
           <Heading as="h2" textStyle="h2">
             Getting Around
           </Heading>
@@ -146,31 +174,6 @@ const Localism = () => (
               the Asylum
             </Link>
           </Text>
-        </Box>
-        <Box>
-          <Heading as="h2" textStyle="h2" mb={4}>
-            Daily Schedule
-          </Heading>
-          <Link
-            href="/assets/gfel-schedule.jpeg"
-            isExternal
-            hideArrow
-            data-group
-          >
-            <Box as="span" position="relative" outline="1px solid blue">
-              <Image src="/assets/gfel-schedule.jpeg" alt="Schedule" w="full" />
-              <Icon
-                opacity={0}
-                position="absolute"
-                as={AiOutlineSearch}
-                bottom={2}
-                insetInlineEnd={2}
-                fontSize="xl"
-                transition="opacity 0.2s ease-out"
-                _groupHover={{ opacity: 1, transition: 'opacity 0.2s ease-out' }}
-              />
-            </Box>
-          </Link>
         </Box>
         {/* <Box>
           <Heading textStyle="h2">Things to Do</Heading>
