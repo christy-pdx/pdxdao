@@ -78,6 +78,10 @@ const overrides = {
       secondaryHover: '#0f08',
       tertiary: '#0ff',
       tertiaryHover: '#0ff8',
+      alphaYellow: '#FEF8B8af',
+      alphaGreen: '#CFEDD1af',
+      alphaGreenYellow: '#BEC26Aaf',
+      alphaOrange: '#F27200af',
     },
   },
 }

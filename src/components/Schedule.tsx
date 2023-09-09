@@ -11,12 +11,6 @@ import {
   Tr,
 } from '@chakra-ui/react'
 
-const lightGreen = '#CFEDD1af'
-const greenYellow = '#BEC26Aaf'
-const lightYellow = '#FEF8B8af'
-const lightOrange = '#F27200af'
-const orange = '#F27200af'
-
 export const Schedule = () => (
   <Flex
     id="schedule"
@@ -69,7 +63,7 @@ export const Schedule = () => (
             fontWeight="bold"
             textTransform="uppercase"
             border="2px"
-            bg={lightGreen}
+            bg="alphaGreen"
             h={10}
           >
             <Td borderRight="1px" textAlign="center">
@@ -77,7 +71,7 @@ export const Schedule = () => (
             </Td>
             <Td>12 Thursday</Td>
           </Tr>
-          <Tr fontWeight="bold" bg={greenYellow} borderInline="2px">
+          <Tr fontWeight="bold" bg="alphaGreenYellow" borderInline="2px">
             <Td borderRight="1px" textAlign="center">
               urban ecology trek
               <Text fontWeight="normal">Forest Park</Text>
@@ -85,7 +79,7 @@ export const Schedule = () => (
             <Td>Kailash Ecovillage tour</Td>
           </Tr>
           <Tr fontWeight="bold" borderInline="2px">
-            <Td bg={lightGreen} textAlign="center" borderRight="1px">
+            <Td bg="alphaGreen" textAlign="center" borderRight="1px">
               Schelling Point{' '}
               <Text as="span" fontWeight="normal">
                 {' '}
@@ -93,7 +87,7 @@ export const Schedule = () => (
               </Text>
               <Text fontWeight="normal">Anchors PDX</Text>
             </Td>
-            <Td bg={greenYellow} textAlign="center">
+            <Td bg="alphaGreenYellow" textAlign="center">
               urban farm work party
               <Text fontWeight="normal">Tryon Life Community Farm</Text>
             </Td>
@@ -101,7 +95,7 @@ export const Schedule = () => (
           <Tr fontWeight="bold">
             <Td borderTop="2px" borderBottom={0} borderRight="2px" />
             <Td
-              bg={lightGreen}
+              bg="alphaGreen"
               textAlign="center"
               borderBottom="2px"
               borderRight="2px"
@@ -149,7 +143,7 @@ export const Schedule = () => (
             </Td>
             <Td>15 Sunday</Td>
           </Tr>
-          <Tr bg={lightYellow} borderInline="2px">
+          <Tr bg="alphaYellow" borderInline="2px">
             <Td borderRight="1px" textAlign="center">
               <Text as="span" fontWeight="bold">
                 panel
@@ -167,7 +161,7 @@ export const Schedule = () => (
               <Text>• TBD—Emergent</Text>
             </Td>
           </Tr>
-          <Tr bg={lightYellow} borderInline="2px">
+          <Tr bg="alphaYellow" borderInline="2px">
             <Td borderRight="1px" textAlign="center">
               <Text fontWeight="bold">speaker sessions</Text>
               <Text>• Emaline Friedman, Ph.D., Neighbourhoods</Text>
@@ -189,7 +183,7 @@ export const Schedule = () => (
           <Tr borderInline="2px">
             <Td
               textAlign="center"
-              bg={lightOrange}
+              bg="alphaOrange"
               borderRight="1px"
               borderBottom="2px"
             >
@@ -198,21 +192,21 @@ export const Schedule = () => (
             </Td>
             <Td
               textAlign="center"
-              bg={lightYellow}
+              bg="alphaYellow"
               fontWeight="bold"
               borderRight="1px"
               borderBottom="2px"
             >
               unconference
             </Td>
-            <Td textAlign="center" bg={lightYellow} fontWeight="bold">
+            <Td textAlign="center" bg="alphaYellow" fontWeight="bold">
               unconference
             </Td>
           </Tr>
           <Tr border="0">
             <Td border="0" />
             <Td border="0" />
-            <Td border="2px" borderTop="1px" bg={orange}>
+            <Td border="2px" borderTop="1px" bg="alphaOrange">
               <Text as="span" fontWeight="bold">
                 closing party
               </Text>{' '}
