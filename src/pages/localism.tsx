@@ -1,5 +1,6 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/react'
+import { Box, Flex, Heading, Icon, Image, Text } from '@chakra-ui/react'
 import { ButtonLink, Link, Page, Schedule } from '@/components'
+import { AiOutlineSearch } from "react-icons/ai"
 
 const Localism = () => (
   <Page title="GFEL" description="A General Forum on Ethereum Localism" pb={32}>
@@ -112,6 +113,34 @@ const Localism = () => (
           </Text>
         </Box>
         <Box>
+          <Heading as="h2" textStyle="h2" mb={4}>
+            Daily Schedule
+          </Heading>
+          <Text>
+            Planning is in progress 🔮
+          </Text>
+          <Link
+            href="/assets/gfel-schedule.jpeg"
+            isExternal
+            hideArrow
+            data-group
+          >
+            <Box as="span" position="relative" outline="1px solid blue">
+              <Image src="/assets/gfel-schedule.jpeg" alt="Schedule" w="full" />
+              <Icon
+                opacity={0}
+                position="absolute"
+                as={AiOutlineSearch}
+                bottom={2}
+                insetInlineEnd={2}
+                fontSize="xl"
+                transition="opacity 0.2s ease-out"
+                _groupHover={{ opacity: 1, transition: 'opacity 0.2s ease-out' }}
+              />
+            </Box>
+          </Link>
+        </Box>
+        <Box>
           <Heading as="h2" textStyle="h2">
             Getting Around
           </Heading>
@@ -146,11 +175,15 @@ const Localism = () => (
             </Link>
           </Text>
         </Box>
-        <Box>
-          <Heading as="h2" textStyle="h2" mb={4}>
-            Daily Schedule
-          </Heading>
-        </Box>
+        {/* <Box>
+          <Heading textStyle="h2">Things to Do</Heading>
+          <Text>We&apos;ll coordinate some fun hangs around the city, but feel free to check for local happenings.</Text>
+          <Flex direction="column">
+            <Link>Music Shows</Link>
+            <Link>Art Shows</Link>
+            <Link>Hikes</Link>
+          </Flex>
+        </Box> */}
       </Flex>
     </Flex>
     <Schedule />
