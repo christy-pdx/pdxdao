@@ -27,7 +27,7 @@ export const Schedule = () => (
     bg="url(/assets/schedule-bg.png)"
     position="relative"
     isolation="isolate"
-    sx={{ '*': { fontFamily: 'var(--chakra-fonts-schedule)' } }}
+    sx={{ '*': { fontFamily: 'schedule !important' } }}
   >
     <Box position="absolute" inset={0} bg="whiteAlpha.700" zIndex={-1} />
     <Heading as="h2" textStyle="h2" lineHeight={1.1} letterSpacing="-0.02em">
