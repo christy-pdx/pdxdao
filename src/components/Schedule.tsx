@@ -100,7 +100,6 @@ export const Schedule = () => (
       >
         12 Thursday
       </Text>
-
       <Text
         gridArea="wedSlot1"
         fontWeight="bold"
@@ -111,7 +110,9 @@ export const Schedule = () => (
         textAlign="center"
       >
         urban ecology trek
-        <Text fontWeight="normal">Forest Park</Text>
+        <Text fontWeight="normal" as="span" display="block">
+          Forest Park
+        </Text>
       </Text>
       <Text
         gridArea="thursSlot1"
@@ -124,47 +125,40 @@ export const Schedule = () => (
       >
         Kailash Ecovillage tour
       </Text>
-      <Text
+      <Box
         gridArea="wedSlot2"
         bg="alphaGreen"
         textAlign="center"
         borderRight={{ base: '2px', sm: '1px' }}
         borderLeft="2px"
         borderBottom={{ base: 0, sm: '2px' }}
-        fontWeight="bold"
       >
-        Schelling Point{' '}
-        <Text as="span" fontWeight="normal">
-          @ Green
+        <Text>
+          <b>Schelling Point</b> @ Green
         </Text>
-        <Text fontWeight="normal">Anchors PDX</Text>
-      </Text>
-      <Text
+        <Text>Anchors PDX</Text>
+      </Box>
+      <Box
         gridArea="thursSlot2"
         bg="alphaGreenYellow"
         textAlign="center"
-        fontWeight="bold"
         borderRight="2px"
         borderBottom="1px"
         borderLeft={{ base: '2px', sm: 0 }}
       >
-        urban farm work party
-        <Text fontWeight="normal">Tryon Life Community Farm</Text>
-      </Text>
+        <Text fontWeight="bold">urban farm work party</Text>
+        <Text>Tryon Life Community Farm</Text>
+      </Box>
       <Text
         gridArea="thursSlot3"
         bg="alphaGreen"
         textAlign="center"
-        fontWeight="bold"
         borderBottom="2px"
         borderRight="2px"
         borderLeft="2px"
         p={2}
       >
-        Schelling Point{' '}
-        <Text as="span" fontWeight="normal">
-          @ Tryon
-        </Text>
+        <b>Schelling Point</b> @ Tryon
       </Text>
       {/* FORUM */}
       <Box
@@ -188,10 +182,7 @@ export const Schedule = () => (
         bg="alphaOrange"
         borderLeft={{ base: '2px', lg: 0 }}
       >
-        <Text as="span" mr={2}>
-          🌙
-        </Text>
-        13 Friday
+        🌙 13 Friday
       </Text>
       <Text
         gridArea="sat"
@@ -204,7 +195,7 @@ export const Schedule = () => (
       >
         14 Saturday
       </Text>
-      <Box
+      <Text
         gridArea="sun"
         textAlign="center"
         fontWeight="bold"
@@ -214,8 +205,8 @@ export const Schedule = () => (
         borderLeft={{ base: '2px', sm: 0 }}
       >
         15 Sunday
-      </Box>
-      <Text
+      </Text>
+      <Box
         gridArea="friSlot1"
         bg="alphaYellow"
         borderBottom="1px"
@@ -223,12 +214,10 @@ export const Schedule = () => (
         borderLeft={{ base: '2px', lg: 0 }}
         textAlign="center"
       >
-        <Text as="span" fontWeight="bold">
-          panel
-        </Text>
+        <Text fontWeight="bold">panel</Text>
         <Text>• Eth Localism Experiments</Text>
-      </Text>
-      <Text
+      </Box>
+      <Box
         gridArea="satSlot1"
         bg="alphaYellow"
         textAlign="center"
@@ -239,8 +228,8 @@ export const Schedule = () => (
         <Text fontWeight="bold">panels</Text>
         <Text>• Historical Localism/Commons</Text>
         <Text>• Cosmolocal Systems</Text>
-      </Text>
-      <Text
+      </Box>
+      <Box
         gridArea="sunSlot1"
         bg="alphaYellow"
         textAlign="center"
@@ -251,8 +240,8 @@ export const Schedule = () => (
         <Text fontWeight="bold">panels</Text>
         <Text>• Practical Eth Localism</Text>
         <Text>• TBD—Emergent</Text>
-      </Text>
-      <Text
+      </Box>
+      <Box
         gridArea="friSlot2"
         bg="alphaYellow"
         borderBottom="1px"
@@ -263,8 +252,8 @@ export const Schedule = () => (
         <Text fontWeight="bold">speaker sessions</Text>
         <Text>• Emaline Friedman, Ph.D., Neighbourhoods</Text>
         <Text>• Tony Lai, Mothertree Labs</Text>
-      </Text>
-      <Text
+      </Box>
+      <Box
         gridArea="satSlot2"
         bg="alphaYellow"
         borderBottom="1px"
@@ -276,8 +265,8 @@ export const Schedule = () => (
         <Text>• Howard Silverman, PNCA</Text>
         <Text>• Giulio Quarta, Crypto Commons Hub</Text>
         <Text>• TBA</Text>
-      </Text>
-      <Text
+      </Box>
+      <Box
         gridArea="sunSlot2"
         bg="alphaYellow"
         textAlign="center"
@@ -289,7 +278,7 @@ export const Schedule = () => (
         <Text>• Alex Marx, Optimism</Text>
         <Text>• TBA</Text>
         <Text>• TBA</Text>
-      </Text>
+      </Box>
       <Text
         gridArea="friSlot3"
         textAlign="center"
@@ -298,7 +287,7 @@ export const Schedule = () => (
         borderBottom="2px"
         borderLeft={{ base: '2px', lg: 0 }}
       >
-        <Text fontWeight="bold">👻 Friday the 13th activities</Text>
+        <b>👻 Friday the 13th activities</b>
         Various locations—TBD
       </Text>
       <Text
@@ -331,10 +320,7 @@ export const Schedule = () => (
         bg="alphaOrange"
         textAlign="center"
       >
-        <Text as="span" fontWeight="bold">
-          closing party
-        </Text>{' '}
-        @ TBD
+        <b>closing party</b> @ TBD
       </Text>
     </Grid>
   </Flex>
