@@ -51,7 +51,7 @@ const Home: FC = () => (
             and events
           </Text>{' '}
           <Text>
-            There, you&apos;ll be able to ask questions and get a sense of the{' '}
+            There, you'll be able to ask questions and get a sense of the{' '}
             <Text
               as="span"
               fontFamily="cursive"
@@ -61,7 +61,7 @@ const Home: FC = () => (
             >
               vibe
             </Text>{' '}
-            of our community—we&apos;d be glad to meet you!
+            of our community—we'd be glad to meet you!
           </Text>
         </Box>
         <ButtonLink href="https://www.meetup.com/ethpdx/" hideArrow>
