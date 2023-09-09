@@ -70,6 +70,7 @@ export const Schedule = () => (
         gridArea="pre"
         textTransform="uppercase"
         textAlign="center"
+        fontWeight="bold"
         border="2px"
         background="whiteAlpha.800"
       >
@@ -116,6 +117,7 @@ export const Schedule = () => (
         gridArea="thursSlot1"
         bg="alphaGreenYellow"
         textAlign="center"
+        fontWeight="bold"
         borderRight="2px"
         borderBottom="1px"
         borderLeft={{ base: '2px', sm: 0 }}
@@ -141,6 +143,7 @@ export const Schedule = () => (
         gridArea="thursSlot2"
         bg="alphaGreenYellow"
         textAlign="center"
+        fontWeight="bold"
         borderRight="2px"
         borderBottom="1px"
         borderLeft={{ base: '2px', sm: 0 }}
@@ -152,6 +155,7 @@ export const Schedule = () => (
         gridArea="thursSlot3"
         bg="alphaGreen"
         textAlign="center"
+        fontWeight="bold"
         borderBottom="2px"
         borderRight="2px"
         borderLeft="2px"
@@ -167,6 +171,7 @@ export const Schedule = () => (
         gridArea="forum"
         textTransform="uppercase"
         textAlign="center"
+        fontWeight="bold"
         border="2px"
         borderLeft={{ base: '2px', lg: 0 }}
         background="whiteAlpha.800"
@@ -207,7 +212,6 @@ export const Schedule = () => (
         borderRight="2px"
         borderBottom="2px"
         borderLeft={{ base: '2px', sm: 0 }}
-        // mt="0 !important"
       >
         15 Sunday
       </Box>
