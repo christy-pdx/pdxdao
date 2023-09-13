@@ -94,6 +94,12 @@ const Localism = () => (
           <Heading as="h2" textStyle="h2">
             Details and Information for Attendees
           </Heading>
+          <Link
+            href="https://blocklive.io/event/a-general-forum-on-ethereum-localism"
+            rel="noopener noreferrer"
+          >
+            Forum Ticketing
+          </Link>
         </Box>
         <Box>
           <Heading as="h3" textStyle="h2">
