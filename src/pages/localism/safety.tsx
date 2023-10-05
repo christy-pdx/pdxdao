@@ -39,7 +39,7 @@ const CodeOfConduct: React.FC = () => (
         Safety Best Practices
       </Heading>
       <Text>
-        The safety and wellbeing of everyone attending is our top priority. The
+        Attendee safety and wellbeing is our top priority. The
         Forum on Ethereum Localism aims to cultivate a space where all feel safe
         to be themselves and lend their unique perspective. In this spirit, we
         ask that all participants keep the following guidelines in mind:
@@ -48,17 +48,17 @@ const CodeOfConduct: React.FC = () => (
 
     <Section>
       <Heading as="h3" textStyle="h3" mb={4} id="lost-or-stolen-items">
-        Lost or Stolen Items
+        Personal Belongings
       </Heading>
       <UnorderedList>
         <ListItem>
-          Always be mindful of your personal belongings and surroundings.
+          Always be mindful of your personal belongings and aware of your surroundings.
         </ListItem>
         <ListItem>
-          PDX DAO assumes no direct responsibility for lost, stolen, or damaged
-          items, but we encourage you to treat all items shared and personal
-          with care. The venue may not be available to access for certain times
-          during the event, so please plan accordingly.
+          PDX DAO assumes no responsibility for lost, stolen, or damaged
+          items. We encourage you to treat all personal and shared items
+          with care. The venue will only be accessible
+          during scheduled event hours, so please plan accordingly.
         </ListItem>
       </UnorderedList>
     </Section>
@@ -68,24 +68,24 @@ const CodeOfConduct: React.FC = () => (
       </Heading>
       <UnorderedList>
         <ListItem>
-          While the surrounding neighborhood is generally safe, it is always a
+          While the surrounding neighborhood is generally safe, it's always a
           good idea to walk in groups of two or more. Event volunteers are
           always happy to walk with you to your transportation or the next
-          event.
+          event--just let us know.
           <br />
-          If you feel unsafe at any time you may return to the warehouse or move
-          east towards MLK (the closest busy street).
+          If you feel unsafe at any time you may return to the warehouse during event hours, or move
+          east towards Martin Luther King Jr. Blvd. (the nearest busy street, three blocks from Bridgespace).
         </ListItem>
         <ListItem>
-          Please familiarize yourself with general de-escalation techniques and
-          trauma-informed responses (speaking slowly and calmly to an agitated
+          Being familiar with general de-escalation techniques and
+          trauma-informed responses is encouraged (speaking slowly and calmly to an agitated
           person, reflecting their language to demonstrate understanding of
           their point of view, and avoiding physically aggressive body
           postures).
           <br />
           We believe that in most cases, we can all fill our shared needs for
-          safety without involvement of the police, but it is also important to
-          note that police response times are long in this area. For many
+          safety without involvement of the police, and it is also important to
+          note that police response times can be delayed. For many
           reasons, it is best to deal with most situations by deescalating if
           possible and moving to a safe place.
         </ListItem>
@@ -108,12 +108,12 @@ const CodeOfConduct: React.FC = () => (
           upstairs area.
         </ListItem>
         <ListItem>
-          Note: The basement of the warehouse is an operational business. While
-          our event is expected, we still ask that you please be mindful of
+          Note: The basement of the warehouse is a daily operational business. While
+          our event and associated activity and noise is expected, we still ask that you please be mindful of
           those working downstairs during daytime hours.{' '}
           <em>
             Under no circumstances should attendees go downstairs without
-            speaking to an organizer.
+            first speaking to an organizer.
           </em>
         </ListItem>
       </UnorderedList>
@@ -125,11 +125,11 @@ const CodeOfConduct: React.FC = () => (
       <UnorderedList>
         {/* <ListItem>
             In case of any situation where you feel the need to contact the
-            organizers, you can reach Christy at ___, James at ____, and Ven at
-            ______.
+            organizers, you can reach Christy via Telegram at @christypdx or by phone at 1-714-788-8602, James via Telegram at @exeuntdoteth, and Ven via Telegram at
+            @vengist.
           </ListItem> */}
         <ListItem>
-          The best way to stay connected will be through Telegram, so be sure to{' '}
+          The best way to stay connected generally is through the Telegram group chat, so be sure to{' '}
           <Link href="https://t.me/+3XVnc4PfzRsxMDEx">join the Telegram</Link>
         </ListItem>
       </UnorderedList>
@@ -140,17 +140,17 @@ const CodeOfConduct: React.FC = () => (
       </Heading>
       <UnorderedList>
         <ListItem>
-          We're following the Federal guidelines for COVID, which are currently
+          We're following Federal guidelines for COVID, which are currently
           'business as usual,' so please take the precautions that best suit
           your personal risk level.
         </ListItem>
         <ListItem>
-          We will keep airflow as open as possible to help keep the conditions
+          We'll keep airflow as open as possible to help keep conditions
           safe, and will let folks know if weather or other conditions mean open
           airflow is less accessible.
         </ListItem>
         <ListItem>
-          Use of masks inside are encouraged but not required.
+          Use of masks inside is not required.
         </ListItem>
         <ListItem>
           Being up-to-date on your Covid-19 vaccine and boosters is encouraged
@@ -166,12 +166,12 @@ const CodeOfConduct: React.FC = () => (
       <Text>
         We value the participation of each member of the community and want all
         attendees to have an enjoyable and fulfilling experience. Accordingly,
-        all attendees are expected to show respect and courtesy to other
-        attendees throughout the event.
+        all attendees are expected to show respect and courtesy to one another
+        throughout the event.
       </Text>
       <Text>
         To make clear what is expected, all attendees and speakers at GFEL 2023
-        are required to conform to this Code of Conduct.{' '}
+        are required to abide by this Code of Conduct.{' '}
         <em>
           The Code of Conduct will be enforced throughout the event without
           exception.
