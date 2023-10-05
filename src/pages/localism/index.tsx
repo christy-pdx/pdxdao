@@ -1,4 +1,13 @@
-import { Box, Flex, Heading, Icon, Image, Text } from '@chakra-ui/react'
+import {
+  Box,
+  Flex,
+  Heading,
+  Icon,
+  Image,
+  ListItem,
+  Text,
+  UnorderedList,
+} from '@chakra-ui/react'
 import { ButtonLink, Link, Page } from '@/components'
 import { AiOutlineSearch } from 'react-icons/ai'
 
@@ -91,15 +100,21 @@ const Localism = () => (
           </ButtonLink>
         </Box>
         <Box>
-          <Heading as="h2" textStyle="h2">
+          <Heading as="h2" textStyle="h2" mb={4}>
             Details and Information for Attendees
           </Heading>
-          <Link
-            href="https://blocklive.io/event/a-general-forum-on-ethereum-localism"
-            rel="noopener noreferrer"
-          >
-            Forum Ticketing
-          </Link>
+          <UnorderedList listStyleType="none" ms={0}>
+            <ListItem>
+              <Link
+                href="https://blocklive.io/event/a-general-forum-on-ethereum-localism"
+              >
+                Forum Ticketing
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="/localism/safety/">Safety and Code of Conduct</Link>
+            </ListItem>
+          </UnorderedList>
         </Box>
         <Box>
           <Heading as="h3" textStyle="h2">
@@ -122,9 +137,7 @@ const Localism = () => (
           <Heading as="h2" textStyle="h2" mb={4}>
             Daily Schedule
           </Heading>
-          <Text>
-            Planning is in progress 🔮
-          </Text>
+          <Text>Planning is in progress 🔮</Text>
           <Link
             href="/assets/gfel-schedule.jpeg"
             isExternal
@@ -141,7 +154,10 @@ const Localism = () => (
                 insetInlineEnd={2}
                 fontSize="xl"
                 transition="opacity 0.2s ease-out"
-                _groupHover={{ opacity: 1, transition: 'opacity 0.2s ease-out' }}
+                _groupHover={{
+                  opacity: 1,
+                  transition: 'opacity 0.2s ease-out',
+                }}
               />
             </Box>
           </Link>
