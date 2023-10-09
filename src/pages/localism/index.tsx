@@ -106,6 +106,13 @@ const Localism = () => (
           <UnorderedList listStyleType="none" ms={0}>
             <ListItem>
               <Link
+                href="https://docs.google.com/spreadsheets/d/1eC16w6gR_6aZpYIl0tyUPr7Sji7yM6UXZ3kKuaDxUiU/edit?usp=sharing"
+              >
+                Event Schedule
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
                 href="https://blocklive.io/event/a-general-forum-on-ethereum-localism"
               >
                 Forum Ticketing
