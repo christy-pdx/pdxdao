@@ -11,6 +11,32 @@ import {
 import { ButtonLink, Link, Page } from '@/components'
 import { AiOutlineSearch } from 'react-icons/ai'
 
+type AudioTrack = {
+  title: string
+  src: string
+}
+
+const audioData: Array<AudioTrack[]> = [
+  [
+    {
+      title: 'Introduction',
+      src: '/assets/audio/gfel-day-1-intro.m4a',
+    },
+    {
+      title: 'Panel: Experiments in blockchain localism',
+      src: '/assets/audio/gfel-day-1-panel-experiments-in-blockchain-localism.m4a',
+    },
+    {
+      title: 'Giulio Quarta: Breadchain and primer in rational optimism',
+      src: '/assets/audio/gfel-day-1-giulio-quarta-breadchain-and-primer-in-rational-optimism.m4a',
+    },
+    {
+      title: 'Tony Lei: Ecocoins and ecoweaving',
+      src: '/assets/audio/gfel-day-1-tony-lei-ecocoins-and-ecoweaving.m4a',
+    },
+  ],
+]
+
 const Localism = () => (
   <Page title="GFEL" description="A General Forum on Ethereum Localism" pb={32}>
     <Flex direction="column" alignItems="center" justifyContent="center">
@@ -105,16 +131,12 @@ const Localism = () => (
           </Heading>
           <UnorderedList listStyleType="none" ms={0}>
             <ListItem>
-              <Link
-                href="https://docs.google.com/spreadsheets/d/1eC16w6gR_6aZpYIl0tyUPr7Sji7yM6UXZ3kKuaDxUiU/edit?usp=sharing"
-              >
+              <Link href="https://docs.google.com/spreadsheets/d/1eC16w6gR_6aZpYIl0tyUPr7Sji7yM6UXZ3kKuaDxUiU/edit?usp=sharing">
                 Event Schedule
               </Link>
             </ListItem>
             <ListItem>
-              <Link
-                href="https://blocklive.io/event/a-general-forum-on-ethereum-localism"
-              >
+              <Link href="https://blocklive.io/event/a-general-forum-on-ethereum-localism">
                 Forum Ticketing
               </Link>
             </ListItem>
@@ -204,15 +226,32 @@ const Localism = () => (
             </Link>
           </Text>
         </Box>
-        {/* <Box>
-          <Heading textStyle="h2">Things to Do</Heading>
-          <Text>We'll coordinate some fun hangs around the city, but feel free to check for local happenings.</Text>
-          <Flex direction="column">
-            <Link>Music Shows</Link>
-            <Link>Art Shows</Link>
-            <Link>Hikes</Link>
-          </Flex>
-        </Box> */}
+        <Box>
+          <Heading mb={4}>Recap audio recordings</Heading>
+          {audioData.map((day, i) => (
+            <Flex key={i} direction="column" gap="4">
+              <Heading as="h3" mb={2} fontFamily="body" fontSize="2xl">
+                Day {i + 1}
+              </Heading>
+              {day.map(({ title, src }, j) => (
+                <Flex
+                  key={j}
+                  direction="column"
+                  justify="space-between"
+                  gap={2}
+                >
+                  <audio controls style={{ width: '100%' }}>
+                    <source src={src} type="audio/mp4" />
+                    Your browser does not support the audio element.
+                  </audio>
+                  <Text ms={4} fontWeight="bold">
+                    {title}
+                  </Text>
+                </Flex>
+              ))}
+            </Flex>
+          ))}
+        </Box>
       </Flex>
     </Flex>
   </Page>
