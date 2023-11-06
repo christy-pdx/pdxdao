@@ -93,26 +93,6 @@ const Localism = () => (
           </Flex>
         </Flex>
       </Box>
-      <Flex justify="center" bg="secondary" boxShadow="lg" w="100vw">
-        <Flex
-          p={4}
-          alignItems="center"
-          position="relative"
-          justifyContent="center"
-          direction={['column', null, null, 'row']}
-          gap={6}
-          maxW="max"
-        >
-          <Heading>Applications Open</Heading>
-          <Text m={0}>
-            Our space is lovely but small, so capacity is limited to 100, so
-            please read up on the intention below before applying.
-          </Text>
-          <ButtonLink href="https://forms.gle/oWP3HZ1hdV8CPWqSA">
-            Apply Now
-          </ButtonLink>
-        </Flex>
-      </Flex>
       <Flex direction="column" maxW="720px" gap={12} pt={12} px={4}>
         <Box>
           <Text fontSize="xl">
