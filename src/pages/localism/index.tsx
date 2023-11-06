@@ -23,15 +23,15 @@ const audioData: Array<AudioTrack[]> = [
       src: '/assets/audio/gfel-day-1-intro.m4a',
     },
     {
-      title: 'Panel: Experiments in blockchain localism',
+      title: 'Panel: Experiments in Blockchain Localism',
       src: '/assets/audio/gfel-day-1-panel-experiments-in-blockchain-localism.m4a',
     },
     {
-      title: 'Giulio Quarta: Breadchain and primer in rational optimism',
+      title: 'Giulio Quarta: Breadchain and Primer in Rational Optimism',
       src: '/assets/audio/gfel-day-1-giulio-quarta-breadchain-and-primer-in-rational-optimism.m4a',
     },
     {
-      title: 'Tony Lei: Ecocoins and ecoweaving',
+      title: 'Tony Lei: Ecocoins and Ecoweaving',
       src: '/assets/audio/gfel-day-1-tony-lei-ecocoins-and-ecoweaving.m4a',
     },
   ],
@@ -227,24 +227,38 @@ const Localism = () => (
           </Text>
         </Box>
         <Box>
-          <Heading mb={4}>Recap audio recordings</Heading>
+          <Heading mb={4}>Recap Audio Recordings</Heading>
           {audioData.map((day, i) => (
             <Flex key={i} direction="column" gap="4">
               <Heading as="h3" mb={2} fontFamily="body" fontSize="2xl">
                 Day {i + 1}
               </Heading>
               {day.map(({ title, src }, j) => (
-                <Flex
-                  key={j}
-                  direction="column"
-                  justify="space-between"
-                  gap={2}
-                >
-                  <audio controls style={{ width: '100%' }}>
-                    <source src={src} type="audio/mp4" />
-                    Your browser does not support the audio element.
-                  </audio>
-                  <Text ms={4} fontWeight="bold">
+                <Flex key={j} direction="column" justify="space-between">
+                  <Box w="full" position="relative">
+                    <audio controls style={{ width: '100%' }}>
+                      <source src={src} type="audio/mp4" />
+                      Your browser does not support the audio element.
+                    </audio>
+                    <Box
+                      position="absolute"
+                      insetInline="0"
+                      top="50%"
+                      bottom="0"
+                      borderInline="2px"
+                      zIndex="-1"
+                      borderColor="blackAlpha.400"
+                    />
+                  </Box>
+                  <Text
+                    px="4"
+                    py="2"
+                    fontWeight="bold"
+                    border="2px"
+                    borderTop="none"
+                    borderColor="blackAlpha.400"
+                    borderBottomRadius="xl"
+                  >
                     {title}
                   </Text>
                 </Flex>
