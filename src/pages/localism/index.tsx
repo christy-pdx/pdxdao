@@ -35,6 +35,42 @@ const audioData: Array<AudioTrack[]> = [
       src: '/assets/audio/gfel-day-1-tony-lei-ecocoins-and-ecoweaving.m4a',
     },
   ],
+  [
+    {
+      title: 'Benjamin Life: Civic Innovation for People and Planet',
+      src: '/assets/audio/gfel-day-2-benjamin-life-civic-innovation-for-people-and-planet.m4a',
+    },
+    {
+      title: 'Emaline Friedman: Local Chains for Social Coordination',
+      src: '/assets/audio/gfel-day-2-emaline-friedman-local-chains-for-social-coordination.m4a',
+    },
+    {
+      title: 'Fishbowl Panel: Regenerative Financial Systems',
+      src: '/assets/audio/gfel-day-2-fishbowl-panel-regenerative-financial-systems.m4a',
+    },
+    {
+      title: 'Howard Silverman: Recollections and Provocations',
+      src: '/assets/audio/gfel-day-2-howard-silverman-recollections-and-provocations.m4a',
+    },
+  ],
+  [
+    {
+      title: 'Giulio Quarta',
+      src: '/assets/audio/gfel-day-3-giulio-quarta.m4a',
+    },
+    {
+      title: 'Jeff Emmett',
+      src: '/assets/audio/gfel-day-3-jeff-emmett-presentation.m4a',
+    },
+    {
+      title: 'Panel',
+      src: '/assets/audio/gfel-day-3-panel.m4a',
+    },
+    {
+      title: 'Sayer Tindall: Regenerative Finance in Practice',
+      src: '/assets/audio/gfel-day-3-sayer-tindall-regenerative-finance-in-practice.m4a',
+    },
+  ],
 ]
 
 const Localism = () => (
@@ -207,44 +243,48 @@ const Localism = () => (
           </Text>
         </Box>
         <Box>
-          <Heading mb={4}>Recap Audio Recordings</Heading>
-          {audioData.map((day, i) => (
-            <Flex key={i} direction="column" gap="4">
-              <Heading as="h3" mb={2} fontFamily="body" fontSize="2xl">
-                Day {i + 1}
-              </Heading>
-              {day.map(({ title, src }, j) => (
-                <Flex key={j} direction="column" justify="space-between">
-                  <Box w="full" position="relative">
-                    <audio controls style={{ width: '100%' }}>
-                      <source src={src} type="audio/mp4" />
-                      Your browser does not support the audio element.
-                    </audio>
-                    <Box
-                      position="absolute"
-                      insetInline="0"
-                      top="50%"
-                      bottom="0"
-                      borderInline="2px"
-                      zIndex="-1"
+          <Heading mb={4} id="audio">
+            Recap Audio Recordings
+          </Heading>
+          <Flex direction="column" gap="8">
+            {audioData.map((day, i) => (
+              <Flex key={i} direction="column" gap="4">
+                <Heading as="h3" mb={2} fontFamily="body" fontSize="2xl">
+                  Day {i + 1}
+                </Heading>
+                {day.map(({ title, src }, j) => (
+                  <Flex key={j} direction="column" justify="space-between">
+                    <Box w="full" position="relative">
+                      <audio controls style={{ width: '100%' }}>
+                        <source src={src} type="audio/mp4" />
+                        Your browser does not support the audio element.
+                      </audio>
+                      <Box
+                        position="absolute"
+                        insetInline="0"
+                        top="50%"
+                        bottom="0"
+                        borderInline="2px"
+                        zIndex="-1"
+                        borderColor="blackAlpha.400"
+                      />
+                    </Box>
+                    <Text
+                      px="4"
+                      py="2"
+                      fontWeight="bold"
+                      border="2px"
+                      borderTop="none"
                       borderColor="blackAlpha.400"
-                    />
-                  </Box>
-                  <Text
-                    px="4"
-                    py="2"
-                    fontWeight="bold"
-                    border="2px"
-                    borderTop="none"
-                    borderColor="blackAlpha.400"
-                    borderBottomRadius="xl"
-                  >
-                    {title}
-                  </Text>
-                </Flex>
-              ))}
-            </Flex>
-          ))}
+                      borderBottomRadius="xl"
+                    >
+                      {title}
+                    </Text>
+                  </Flex>
+                ))}
+              </Flex>
+            ))}
+          </Flex>
         </Box>
       </Flex>
     </Flex>
