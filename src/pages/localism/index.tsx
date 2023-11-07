@@ -252,36 +252,40 @@ const Localism = () => (
                 <Heading as="h3" mb={2} fontFamily="body" fontSize="2xl">
                   Day {i + 1}
                 </Heading>
-                {day.map(({ title, src }, j) => (
-                  <Flex key={j} direction="column" justify="space-between">
-                    <Box w="full" position="relative">
-                      <audio controls style={{ width: '100%' }}>
-                        <source src={src} type="audio/mp4" />
-                        Your browser does not support the audio element.
-                      </audio>
-                      <Box
-                        position="absolute"
-                        insetInline="0"
-                        top="50%"
-                        bottom="0"
-                        borderInline="2px"
-                        zIndex="-1"
-                        borderColor="blackAlpha.400"
-                      />
-                    </Box>
-                    <Text
-                      px="4"
-                      py="2"
-                      fontWeight="bold"
-                      border="2px"
-                      borderTop="none"
-                      borderColor="blackAlpha.400"
-                      borderBottomRadius="xl"
-                    >
-                      {title}
-                    </Text>
-                  </Flex>
-                ))}
+                {day.map(({ title, src }, j) => {
+                  const BORDER = '1px'
+                  const BORDER_COLOR = 'blackAlpha.300'
+                  return (
+                    <Flex key={j} direction="column" justify="space-between">
+                      <Box w="full" position="relative">
+                        <audio controls style={{ width: '100%' }}>
+                          <source src={src} type="audio/mp4" />
+                          Your browser does not support the audio element.
+                        </audio>
+                        <Box
+                          position="absolute"
+                          insetInline="0"
+                          top="50%"
+                          bottom="0"
+                          borderInline={BORDER}
+                          zIndex="-1"
+                          borderColor={BORDER_COLOR}
+                        />
+                      </Box>
+                      <Text
+                        px="4"
+                        py="2"
+                        fontWeight="bold"
+                        border={BORDER}
+                        borderTop="none"
+                        borderColor={BORDER_COLOR}
+                        borderBottomRadius="xl"
+                      >
+                        {title}
+                      </Text>
+                    </Flex>
+                  )
+                })}
               </Flex>
             ))}
           </Flex>
