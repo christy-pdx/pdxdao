@@ -12,8 +12,8 @@ export const LocalismBanner = () => (
       maxW="max"
     >
       <Text px={8} m={0} textAlign={{ base: 'center', sm: 'start' }}>
-        PDX DAO is looking for speakers and attendees to join us in Portland for <strong>A General Forum on Ethereum Localism</strong>, Friday October 13th - Monday
-        October 16th, 2023.
+        The <strong>General Forum on Ethereum Localism</strong> was a success!
+        Audio recordings are available for those who missed.
       </Text>
       <ButtonLink
         href="/localism/"
@@ -24,7 +24,7 @@ export const LocalismBanner = () => (
         borderColor="body"
         color="body"
       >
-        Learn more
+        View recap
       </ButtonLink>
     </Flex>
   </Flex>
