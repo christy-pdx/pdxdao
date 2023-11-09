@@ -141,107 +141,7 @@ const Localism = () => (
             Read More
           </ButtonLink>
         </Box>
-        <Box>
-          <Heading as="h2" textStyle="h2" mb={4}>
-            Details and Information for Attendees
-          </Heading>
-          <UnorderedList listStyleType="none" ms={0}>
-            <ListItem>
-              <Link href="https://docs.google.com/spreadsheets/d/1eC16w6gR_6aZpYIl0tyUPr7Sji7yM6UXZ3kKuaDxUiU/edit?usp=sharing">
-                Event Schedule
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="https://blocklive.io/event/a-general-forum-on-ethereum-localism">
-                Forum Ticketing
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/localism/safety/">Safety and Code of Conduct</Link>
-            </ListItem>
-          </UnorderedList>
-        </Box>
-        <Box>
-          <Heading as="h3" textStyle="h2">
-            Location
-          </Heading>
-          <Text fontWeight="bold">Venue: BridgeSpace</Text>
-          <Text>133 SE Madison St, Portland, OR 97214</Text>
-          <ButtonLink href="https://goo.gl/maps/E4pmDRBsjC8nRDuM6" mb={6}>
-            View on Google Maps
-          </ButtonLink>
-          <Text fontWeight="900">Where to Stay</Text>
-          <Text>
-            The venue is very central, on the east side of the Willamette River.
-            Airbnb is a great option and there should be plenty of
-            availabilities in the neighborhoods near the venue (Central Eastside
-            Industrial District (CEID), Hawthorne, Ladd's Addition, etc)
-          </Text>
-        </Box>
-        <Box>
-          <Heading as="h2" textStyle="h2" mb={4}>
-            Daily Schedule
-          </Heading>
-          <Text>Planning is in progress 🔮</Text>
-          <Link
-            href="/assets/gfel-schedule.jpeg"
-            isExternal
-            hideArrow
-            data-group
-          >
-            <Box as="span" position="relative" outline="1px solid blue">
-              <Image src="/assets/gfel-schedule.jpeg" alt="Schedule" w="full" />
-              <Icon
-                opacity={0}
-                position="absolute"
-                as={AiOutlineSearch}
-                bottom={2}
-                insetInlineEnd={2}
-                fontSize="xl"
-                transition="opacity 0.2s ease-out"
-                _groupHover={{
-                  opacity: 1,
-                  transition: 'opacity 0.2s ease-out',
-                }}
-              />
-            </Box>
-          </Link>
-        </Box>
-        <Box>
-          <Heading as="h2" textStyle="h2">
-            Getting Around
-          </Heading>
-          <Text>
-            Portland is filled with walkable neighborhoods, and is also very
-            bikeable. An Uber or Lyft can get you anywhere else in a hurry.
-          </Text>
-          <Flex direction="column">
-            <Text fontWeight="bold">Bike Rentals</Text>
-            <Link href="https://www.pdxbikerentals.com/bicycle-rentals-portland#bike-rentals-portland">
-              Everybody's Bike Rentals
-            </Link>
-            <Link href="https://biketownpdx.com/">Biketown</Link>
-          </Flex>
-        </Box>
-        <Box>
-          <Heading as="h2" textStyle="h2">
-            Eats, Drinks, and Hangs
-          </Heading>
-          <Text>
-            Portland is well-known for its food and generally artisan quality
-            everything.
-          </Text>
-          <Text>
-            For quick eats, there are many food cart pods around the city. The
-            closest to the venue being{' '}
-            <Link
-              href="https://goo.gl/maps/55CpzWHsHUHZjBXs6"
-              rel="noopener noreferrer"
-            >
-              the Asylum
-            </Link>
-          </Text>
-        </Box>
+        <Box bg="yellow" p="4" fontWeight="bold" textAlign="center">⚠️ The General Forum on Ethereum Localism has concluded! You can find all the audio recordings of the talks given here.</Box>
         <Box>
           <Heading mb={4} id="audio">
             Recap Audio Recordings
@@ -290,6 +190,46 @@ const Localism = () => (
             ))}
           </Flex>
         </Box>
+
+        <Box>
+          <Heading as="h3" textStyle="h2">
+            Location
+          </Heading>
+          <Text fontWeight="bold">Venue: BridgeSpace</Text>
+          <Text>133 SE Madison St, Portland, OR 97214</Text>
+          <ButtonLink href="https://goo.gl/maps/E4pmDRBsjC8nRDuM6" mb={6}>
+            View on Google Maps
+          </ButtonLink>
+        </Box>
+        <Box>
+          <Heading as="h2" textStyle="h2" mb={4}>
+            2023 Schedule
+          </Heading>
+          <Link
+            href="/assets/gfel-schedule.jpeg"
+            isExternal
+            hideArrow
+            data-group
+          >
+            <Box as="span" position="relative" outline="1px solid blue">
+              <Image src="/assets/gfel-schedule.jpeg" alt="Schedule" w="full" />
+              <Icon
+                opacity={0}
+                position="absolute"
+                as={AiOutlineSearch}
+                bottom={2}
+                insetInlineEnd={2}
+                fontSize="xl"
+                transition="opacity 0.2s ease-out"
+                _groupHover={{
+                  opacity: 1,
+                  transition: 'opacity 0.2s ease-out',
+                }}
+              />
+            </Box>
+          </Link>
+        </Box>
+        <Link href="/localism/safety/">Safety and Code of Conduct</Link>
       </Flex>
     </Flex>
   </Page>
