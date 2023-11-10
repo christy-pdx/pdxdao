@@ -59,7 +59,8 @@ const audioData: Array<AudioTrack[]> = [
       src: '/assets/audio/gfel-day-3-giulio-quarta.m4a',
     },
     {
-      title: 'Jeff Emmett: Learning from Nature's Greatest Evolutionary Algorithms',
+      title:
+        "Jeff Emmett: Learning from Nature's Greatest Evolutionary Algorithms",
       src: '/assets/audio/gfel-day-3-jeff-emmett-presentation.m4a',
     },
     {
@@ -141,7 +142,10 @@ const Localism = () => (
             Read More
           </ButtonLink>
         </Box>
-        <Box bg="yellow" p="4" fontWeight="bold" textAlign="center">⚠️ The General Forum on Ethereum Localism has concluded! You can find all the audio recordings of the talks given here.</Box>
+        <Box bg="yellow" p="4" fontWeight="bold" textAlign="center">
+          ⚠️ The General Forum on Ethereum Localism has concluded! You can find
+          all the audio recordings of the talks given here.
+        </Box>
         <Box>
           <Heading mb={4} id="audio">
             Recap Audio Recordings
