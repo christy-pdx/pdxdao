@@ -11,6 +11,68 @@ import {
 import { ButtonLink, Link, Page } from '@/components'
 import { AiOutlineSearch } from 'react-icons/ai'
 
+type AudioTrack = {
+  title: string
+  src: string
+}
+
+const audioData: Array<AudioTrack[]> = [
+  [
+    {
+      title: 'Introduction',
+      src: '/assets/audio/gfel-day-1-intro.m4a',
+    },
+    {
+      title: 'Panel: Experiments in Blockchain Localism',
+      src: '/assets/audio/gfel-day-1-panel-experiments-in-blockchain-localism.m4a',
+    },
+    {
+      title: 'Giulio Quarta: Breadchain and Primer in Rational Optimism',
+      src: '/assets/audio/gfel-day-1-giulio-quarta-breadchain-and-primer-in-rational-optimism.m4a',
+    },
+    {
+      title: 'Tony Lei: Ecocoins and Ecoweaving',
+      src: '/assets/audio/gfel-day-1-tony-lei-ecocoins-and-ecoweaving.m4a',
+    },
+  ],
+  [
+    {
+      title: 'Benjamin Life: Civic Innovation for People and Planet',
+      src: '/assets/audio/gfel-day-2-benjamin-life-civic-innovation-for-people-and-planet.m4a',
+    },
+    {
+      title: 'Emaline Friedman: Local Chains for Social Coordination',
+      src: '/assets/audio/gfel-day-2-emaline-friedman-local-chains-for-social-coordination.m4a',
+    },
+    {
+      title: 'Fishbowl Panel: Regenerative Financial Systems',
+      src: '/assets/audio/gfel-day-2-fishbowl-panel-regenerative-financial-systems.m4a',
+    },
+    {
+      title: 'Howard Silverman: Recollections and Provocations',
+      src: '/assets/audio/gfel-day-2-howard-silverman-recollections-and-provocations.m4a',
+    },
+  ],
+  [
+    {
+      title: 'Giulio Quarta',
+      src: '/assets/audio/gfel-day-3-giulio-quarta.m4a',
+    },
+    {
+      title: 'Jeff Emmett',
+      src: '/assets/audio/gfel-day-3-jeff-emmett-presentation.m4a',
+    },
+    {
+      title: 'Panel',
+      src: '/assets/audio/gfel-day-3-panel.m4a',
+    },
+    {
+      title: 'Sayer Tindall: Regenerative Finance in Practice',
+      src: '/assets/audio/gfel-day-3-sayer-tindall-regenerative-finance-in-practice.m4a',
+    },
+  ],
+]
+
 const Localism = () => (
   <Page title="GFEL" description="A General Forum on Ethereum Localism" pb={32}>
     <Flex direction="column" alignItems="center" justifyContent="center">
@@ -67,26 +129,6 @@ const Localism = () => (
           </Flex>
         </Flex>
       </Box>
-      <Flex justify="center" bg="secondary" boxShadow="lg" w="100vw">
-        <Flex
-          p={4}
-          alignItems="center"
-          position="relative"
-          justifyContent="center"
-          direction={['column', null, null, 'row']}
-          gap={6}
-          maxW="max"
-        >
-          <Heading>Applications Open</Heading>
-          <Text m={0}>
-            Our space is lovely but small, so capacity is limited to 100, so
-            please read up on the intention below before applying.
-          </Text>
-          <ButtonLink href="https://forms.gle/oWP3HZ1hdV8CPWqSA">
-            Apply Now
-          </ButtonLink>
-        </Flex>
-      </Flex>
       <Flex direction="column" maxW="720px" gap={12} pt={12} px={4}>
         <Box>
           <Text fontSize="xl">
@@ -99,30 +141,56 @@ const Localism = () => (
             Read More
           </ButtonLink>
         </Box>
+        <Box bg="yellow" p="4" fontWeight="bold" textAlign="center">⚠️ The General Forum on Ethereum Localism has concluded! You can find all the audio recordings of the talks given here.</Box>
         <Box>
-          <Heading as="h2" textStyle="h2" mb={4}>
-            Details and Information for Attendees
+          <Heading mb={4} id="audio">
+            Recap Audio Recordings
           </Heading>
-          <UnorderedList listStyleType="none" ms={0}>
-            <ListItem>
-              <Link
-                href="https://docs.google.com/spreadsheets/d/1eC16w6gR_6aZpYIl0tyUPr7Sji7yM6UXZ3kKuaDxUiU/edit?usp=sharing"
-              >
-                Event Schedule
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link
-                href="https://blocklive.io/event/a-general-forum-on-ethereum-localism"
-              >
-                Forum Ticketing
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/localism/safety/">Safety and Code of Conduct</Link>
-            </ListItem>
-          </UnorderedList>
+          <Flex direction="column" gap="8">
+            {audioData.map((day, i) => (
+              <Flex key={i} direction="column" gap="4">
+                <Heading as="h3" mb={2} fontFamily="body" fontSize="2xl">
+                  Day {i + 1}
+                </Heading>
+                {day.map(({ title, src }, j) => {
+                  const BORDER = '1px'
+                  const BORDER_COLOR = 'blackAlpha.300'
+                  return (
+                    <Flex key={j} direction="column" justify="space-between">
+                      <Box w="full" position="relative">
+                        <audio controls style={{ width: '100%' }}>
+                          <source src={src} type="audio/mp4" />
+                          Your browser does not support the audio element.
+                        </audio>
+                        <Box
+                          position="absolute"
+                          insetInline="0"
+                          top="50%"
+                          bottom="0"
+                          borderInline={BORDER}
+                          zIndex="-1"
+                          borderColor={BORDER_COLOR}
+                        />
+                      </Box>
+                      <Text
+                        px="4"
+                        py="2"
+                        fontWeight="bold"
+                        border={BORDER}
+                        borderTop="none"
+                        borderColor={BORDER_COLOR}
+                        borderBottomRadius="xl"
+                      >
+                        {title}
+                      </Text>
+                    </Flex>
+                  )
+                })}
+              </Flex>
+            ))}
+          </Flex>
         </Box>
+
         <Box>
           <Heading as="h3" textStyle="h2">
             Location
@@ -132,19 +200,11 @@ const Localism = () => (
           <ButtonLink href="https://goo.gl/maps/E4pmDRBsjC8nRDuM6" mb={6}>
             View on Google Maps
           </ButtonLink>
-          <Text fontWeight="900">Where to Stay</Text>
-          <Text>
-            The venue is very central, on the east side of the Willamette River.
-            Airbnb is a great option and there should be plenty of
-            availabilities in the neighborhoods near the venue (Central Eastside
-            Industrial District (CEID), Hawthorne, Ladd's Addition, etc)
-          </Text>
         </Box>
         <Box>
           <Heading as="h2" textStyle="h2" mb={4}>
-            Daily Schedule
+            2023 Schedule
           </Heading>
-          <Text>Planning is in progress 🔮</Text>
           <Link
             href="/assets/gfel-schedule.jpeg"
             isExternal
@@ -169,50 +229,7 @@ const Localism = () => (
             </Box>
           </Link>
         </Box>
-        <Box>
-          <Heading as="h2" textStyle="h2">
-            Getting Around
-          </Heading>
-          <Text>
-            Portland is filled with walkable neighborhoods, and is also very
-            bikeable. An Uber or Lyft can get you anywhere else in a hurry.
-          </Text>
-          <Flex direction="column">
-            <Text fontWeight="bold">Bike Rentals</Text>
-            <Link href="https://www.pdxbikerentals.com/bicycle-rentals-portland#bike-rentals-portland">
-              Everybody's Bike Rentals
-            </Link>
-            <Link href="https://biketownpdx.com/">Biketown</Link>
-          </Flex>
-        </Box>
-        <Box>
-          <Heading as="h2" textStyle="h2">
-            Eats, Drinks, and Hangs
-          </Heading>
-          <Text>
-            Portland is well-known for its food and generally artisan quality
-            everything.
-          </Text>
-          <Text>
-            For quick eats, there are many food cart pods around the city. The
-            closest to the venue being{' '}
-            <Link
-              href="https://goo.gl/maps/55CpzWHsHUHZjBXs6"
-              rel="noopener noreferrer"
-            >
-              the Asylum
-            </Link>
-          </Text>
-        </Box>
-        {/* <Box>
-          <Heading textStyle="h2">Things to Do</Heading>
-          <Text>We'll coordinate some fun hangs around the city, but feel free to check for local happenings.</Text>
-          <Flex direction="column">
-            <Link>Music Shows</Link>
-            <Link>Art Shows</Link>
-            <Link>Hikes</Link>
-          </Flex>
-        </Box> */}
+        <Link href="/localism/safety/">Safety and Code of Conduct</Link>
       </Flex>
     </Flex>
   </Page>
