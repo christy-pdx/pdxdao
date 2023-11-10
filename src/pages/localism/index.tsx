@@ -132,7 +132,7 @@ const Localism = () => (
       <Flex direction="column" maxW="720px" gap={12} pt={12} px={4}>
         <Box>
           <Text fontSize="xl">
-            Our intention for this convening is to create a container where the
+            Our intention for this convening was to create a container where the
             Ethereum community can elaborate for itself, in a plurality of
             directions, what an experimentalism of the city can mean and look
             like for web3.
