@@ -27,11 +27,11 @@ const audioData: Array<AudioTrack[]> = [
       src: '/assets/audio/gfel-day-1-panel-experiments-in-blockchain-localism.m4a',
     },
     {
-      title: 'Giulio Quarta: Breadchain and Primer in Rational Optimism',
+      title: 'Giulio Quarta: Breadchain Cooperative',
       src: '/assets/audio/gfel-day-1-giulio-quarta-breadchain-and-primer-in-rational-optimism.m4a',
     },
     {
-      title: 'Tony Lei: Ecocoins and Ecoweaving',
+      title: 'Open Tony: Ecocoins and Ecoweaving',
       src: '/assets/audio/gfel-day-1-tony-lei-ecocoins-and-ecoweaving.m4a',
     },
   ],
@@ -55,15 +55,15 @@ const audioData: Array<AudioTrack[]> = [
   ],
   [
     {
-      title: 'Giulio Quarta',
+      title: 'Giulio Quarta: CoFi - Collaborative Finance',
       src: '/assets/audio/gfel-day-3-giulio-quarta.m4a',
     },
     {
-      title: 'Jeff Emmett',
+      title: 'Jeff Emmett: Learning from Nature's Greatest Evolutionary Algorithms',
       src: '/assets/audio/gfel-day-3-jeff-emmett-presentation.m4a',
     },
     {
-      title: 'Panel',
+      title: 'Panel: Cosmolocal Coordination',
       src: '/assets/audio/gfel-day-3-panel.m4a',
     },
     {
