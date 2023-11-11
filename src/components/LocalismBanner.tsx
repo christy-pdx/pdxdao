@@ -12,8 +12,8 @@ export const LocalismBanner = () => (
       maxW="max"
     >
       <Text px={8} m={0} textAlign={{ base: 'center', sm: 'start' }}>
-        The <strong>General Forum on Ethereum Localism</strong> was a success!
-        Audio recordings are available for those who missed.
+        The October 2023 <strong>General Forum on Ethereum Localism</strong> was a success!
+        Audio recordings are available for those who couldn't be there.
       </Text>
       <ButtonLink
         href="/localism/"
