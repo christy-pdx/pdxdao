@@ -131,6 +131,10 @@ const Localism = () => (
         </Flex>
       </Box>
       <Flex direction="column" maxW="720px" gap={12} pt={12} px={4}>
+        <Box bg="yellow" p="4" fontWeight="bold" textAlign="center">
+          ⚠️ The General Forum on Ethereum Localism has concluded! You can find
+          all the audio recordings of the talks given here.
+        </Box>
         <Box>
           <Text fontSize="xl">
             Our intention for this convening was to create a container where the
@@ -141,10 +145,6 @@ const Localism = () => (
           <ButtonLink href="https://mirror.xyz/ethpdx.eth/kjpsLAAC2Si0XDmr_aFp0F5esPNH4DoPB4lOTlFbR5M">
             Read More
           </ButtonLink>
-        </Box>
-        <Box bg="yellow" p="4" fontWeight="bold" textAlign="center">
-          ⚠️ The General Forum on Ethereum Localism has concluded! You can find
-          all the audio recordings of the talks given here.
         </Box>
         <Box>
           <Heading mb={4} id="audio">
