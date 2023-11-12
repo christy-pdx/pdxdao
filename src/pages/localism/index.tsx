@@ -66,13 +66,13 @@ const audioData: Array<AudioTrack[]> = [
     {
       title: 'Giulio Quarta: CoFi - Collaborative Finance',
       src: '/assets/audio/gfel-day-3-giulio-quarta.m4a',
-      link: '',
+      link: '/assets/audio/slides/Giulio Quarta - CoFi - Collaborative Finance.pdf',
     },
     {
       title:
         "Jeff Emmett: Learning from Nature's Greatest Evolutionary Algorithms",
       src: '/assets/audio/gfel-day-3-jeff-emmett-presentation.m4a',
-      link: '/assets/audio/slides/Jeff Emmet - MycoFi Learning From Natures Greatest Algorithms.pdf',
+      link: '/assets/audio/slides/Jeff Emmett - MycoFi Learning From Natures Greatest Algorithms.pdf',
     },
     {
       title: 'Panel: Cosmolocal Coordination',
