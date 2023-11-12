@@ -14,62 +14,75 @@ import { AiOutlineSearch } from 'react-icons/ai'
 type AudioTrack = {
   title: string
   src: string
+  link: string
 }
 
 const audioData: Array<AudioTrack[]> = [
   [
     {
-      title: 'Introduction',
+      title: 'Introduction by PDX DAO',
       src: '/assets/audio/gfel-day-1-intro.m4a',
+      link: '/assets/audio/slides/PDX DAO - GFEL Introduction.pdf',
     },
     {
       title: 'Panel: Experiments in Blockchain Localism',
       src: '/assets/audio/gfel-day-1-panel-experiments-in-blockchain-localism.m4a',
+      link: '',
     },
     {
       title: 'Giulio Quarta: Breadchain Cooperative',
       src: '/assets/audio/gfel-day-1-giulio-quarta-breadchain-and-primer-in-rational-optimism.m4a',
+      link: '/assets/audio/slides/Giulio Quarta - Breadchain Cooperative.pdf',
     },
     {
       title: 'Open Tony: Ecocoins and Ecoweaving',
-      src: '/assets/audio/gfel-day-1-tony-lei-ecocoins-and-ecoweaving.m4a',
+      src: '/assets/audio/gfel-day-1-open-tony-ecocoins-and-ecoweaving.m4a',
+      link: '/assets/audio/slides/Open Tony - Ecoweaving.pdf',
     },
   ],
   [
     {
       title: 'Benjamin Life: Civic Innovation for People and Planet',
       src: '/assets/audio/gfel-day-2-benjamin-life-civic-innovation-for-people-and-planet.m4a',
+      link: '/assets/audio/slides/Benjamin Life - Civic Innovation For People and Planet.pdf',
     },
     {
       title: 'Emaline Friedman: Local Chains for Social Coordination',
       src: '/assets/audio/gfel-day-2-emaline-friedman-local-chains-for-social-coordination.m4a',
+      link: '/assets/audio/slides/Emaline Friedman - Neighbourhoods.pdf',
     },
     {
       title: 'Fishbowl Panel: Regenerative Financial Systems',
       src: '/assets/audio/gfel-day-2-fishbowl-panel-regenerative-financial-systems.m4a',
+      link: '',
     },
     {
       title: 'Howard Silverman: Recollections and Provocations',
       src: '/assets/audio/gfel-day-2-howard-silverman-recollections-and-provocations.m4a',
+      link: '/assets/audio/slides/Howard SIlverman - Recollections and Provocations.pdf',
     },
   ],
   [
     {
       title: 'Giulio Quarta: CoFi - Collaborative Finance',
       src: '/assets/audio/gfel-day-3-giulio-quarta.m4a',
+      link: '',
     },
     {
       title:
         "Jeff Emmett: Learning from Nature's Greatest Evolutionary Algorithms",
       src: '/assets/audio/gfel-day-3-jeff-emmett-presentation.m4a',
+      link: '/assets/audio/slides/Jeff Emmet - MycoFi Learning From Natures Greatest Algorithms.pdf',
     },
     {
       title: 'Panel: Cosmolocal Coordination',
       src: '/assets/audio/gfel-day-3-panel.m4a',
+      link: '',
     },
     {
       title: 'Sayer Tindall: Regenerative Finance in Practice',
       src: '/assets/audio/gfel-day-3-sayer-tindall-regenerative-finance-in-practice.m4a',
+      link: '/assets/audio/slides/Sayer Tindall - From DeFi to Real-World Impact.pdf',
     },
   ],
 ]
@@ -133,12 +146,12 @@ const Localism = () => (
       <Flex direction="column" maxW="720px" gap={12} pt={12} px={4}>
         <Box bg="yellow" p="4" fontWeight="bold" textAlign="center">
           ⚠️ The General Forum on Ethereum Localism has concluded! You can find
-          all the audio recordings of the talks given here.
+          all the audio recordings of the panels and talks given here.
         </Box>
         <Box>
           <Text fontSize="xl">
             Our intention for this convening was to create a container where the
-            Ethereum community can elaborate for itself, in a plurality of
+            Ethereum community could elaborate for itself, in a plurality of
             directions, what an experimentalism of the city can mean and look
             like for web3.
           </Text>
@@ -156,7 +169,7 @@ const Localism = () => (
                 <Heading as="h3" mb={2} fontFamily="body" fontSize="2xl">
                   Day {i + 1}
                 </Heading>
-                {day.map(({ title, src }, j) => {
+                {day.map(({ title, src, link }, j) => {
                   const BORDER = '1px'
                   const BORDER_COLOR = 'blackAlpha.300'
                   return (
@@ -186,6 +199,13 @@ const Localism = () => (
                         borderBottomRadius="xl"
                       >
                         {title}
+                        <br/>
+                        <Link
+                          href={link}
+                          isExternal
+                        >
+                          View Slides
+                        </Link>
                       </Text>
                     </Flex>
                   )
@@ -199,7 +219,7 @@ const Localism = () => (
           <Heading as="h3" textStyle="h2">
             Location
           </Heading>
-          <Text fontWeight="bold">Venue: BridgeSpace</Text>
+          <Text fontWeight="bold">Venue: BridgeSpace Commons</Text>
           <Text>133 SE Madison St, Portland, OR 97214</Text>
           <ButtonLink href="https://goo.gl/maps/E4pmDRBsjC8nRDuM6" mb={6}>
             View on Google Maps
