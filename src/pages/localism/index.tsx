@@ -65,7 +65,7 @@ const audioData: Array<AudioTrack[]> = [
       link: '',
     },
     {
-      title: 'regional food systems: recollections as provocations',
+      title: 'Regional Food Systems: Recollections as Provocations',
       speaker: 'Howard Silverman',
       src: '/assets/audio/gfel-day-2-howard-silverman-recollections-and-provocations.m4a',
       link: '/assets/audio/slides/Howard SIlverman - Recollections and Provocations.pdf',
