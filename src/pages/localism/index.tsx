@@ -22,7 +22,7 @@ const audioData: Array<AudioTrack[]> = [
   [
     {
       title: 'Introduction by PDX DAO',
-      speaker: 'with haughtvalue, christypdx, vengist, wackerow, macks, Exuent, Josh and Hodlon',
+      speaker: 'with haughtvalue, christypdx, vengi, wackerow, macks, Exuent, Josh and Hodlon',
       src: '/assets/audio/gfel-day-1-intro.m4a',
       link: '/assets/audio/slides/PDX DAO - GFEL Introduction.pdf',
     },
@@ -60,7 +60,7 @@ const audioData: Array<AudioTrack[]> = [
     },
     {
       title: 'Fishbowl Panel: Regenerative Financial Systems',
-      speaker: 'with Owocki, Giulio Quarta, Vengist, Felix Fritsch, Jeff Emmett and more!',
+      speaker: 'with Owocki, Giulio Quarta, vengi, Felix Fritsch, Jeff Emmett and more!',
       src: '/assets/audio/gfel-day-2-fishbowl-panel-regenerative-financial-systems.m4a',
       link: '',
     },
