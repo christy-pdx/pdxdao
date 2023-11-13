@@ -87,7 +87,7 @@ const audioData: Array<AudioTrack[]> = [
     },
     {
       title: 'Panel: Cosmolocal Coordination',
-      speaker: 'with BorrowLucid, Ken Cenna, Anna Kaic and Benjamin Life',
+      speaker: 'with BorrowLucid, Ken Cenna, Anna Kaic, Benjamin Life and more!',
       src: '/assets/audio/gfel-day-3-panel.m4a',
       link: '',
     },
