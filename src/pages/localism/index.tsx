@@ -13,6 +13,7 @@ import { AiOutlineSearch } from 'react-icons/ai'
 
 type AudioTrack = {
   title: string
+  speaker: string
   src: string
   link: string
 }
@@ -21,66 +22,78 @@ const audioData: Array<AudioTrack[]> = [
   [
     {
       title: 'Introduction by PDX DAO',
+      speaker: 'with haughtvalue, christypdx, vengist, wackerow, macks, Exuent, Josh and Hodlon',
       src: '/assets/audio/gfel-day-1-intro.m4a',
       link: '/assets/audio/slides/PDX DAO - GFEL Introduction.pdf',
     },
     {
       title: 'Panel: Experiments in Blockchain Localism',
+      speaker: 'with Hodlon, Bestape, Deborah Simpier, Scott Morris and Sov',
       src: '/assets/audio/gfel-day-1-panel-experiments-in-blockchain-localism.m4a',
       link: '',
     },
     {
-      title: 'Giulio Quarta: Breadchain Cooperative',
+      title: 'Breadchain Cooperative',
+      speaker: 'Giulio Quarta',
       src: '/assets/audio/gfel-day-1-giulio-quarta-breadchain-and-primer-in-rational-optimism.m4a',
       link: '/assets/audio/slides/Giulio Quarta - Breadchain Cooperative.pdf',
     },
     {
-      title: 'Open Tony: Ecocoins and Ecoweaving',
+      title: 'Ecocoins and Ecoweaving',
+      speaker: 'Open Tony',
       src: '/assets/audio/gfel-day-1-open-tony-ecocoins-and-ecoweaving.m4a',
       link: '/assets/audio/slides/Open Tony - Ecoweaving.pdf',
     },
   ],
   [
     {
-      title: 'Benjamin Life: Civic Innovation for People and Planet',
+      title: 'Civic Innovation for People and Planet',
+      speaker: 'Benjamin Life',
       src: '/assets/audio/gfel-day-2-benjamin-life-civic-innovation-for-people-and-planet.m4a',
       link: '/assets/audio/slides/Benjamin Life - Civic Innovation For People and Planet.pdf',
     },
     {
-      title: 'Emaline Friedman: Local Chains for Social Coordination',
+      title: 'Local Chains for Social Coordination',
+      speaker: 'Emaline Friedman',
       src: '/assets/audio/gfel-day-2-emaline-friedman-local-chains-for-social-coordination.m4a',
       link: '/assets/audio/slides/Emaline Friedman - Neighbourhoods.pdf',
     },
     {
       title: 'Fishbowl Panel: Regenerative Financial Systems',
+      speaker: 'with Owocki, Giulio Quarta, Vengist, Felix Fritsch, Jeff Emmett and more!',
       src: '/assets/audio/gfel-day-2-fishbowl-panel-regenerative-financial-systems.m4a',
       link: '',
     },
     {
-      title: 'Howard Silverman: Recollections and Provocations',
+      title: 'Recollections and Provocations',
+      speaker: 'Howard Silverman',
       src: '/assets/audio/gfel-day-2-howard-silverman-recollections-and-provocations.m4a',
       link: '/assets/audio/slides/Howard SIlverman - Recollections and Provocations.pdf',
     },
   ],
   [
     {
-      title: 'Giulio Quarta: CoFi - Collaborative Finance',
+      title: 'CoFi - Collaborative Finance',
+      speaker: 'Giulio Quarta',
       src: '/assets/audio/gfel-day-3-giulio-quarta.m4a',
       link: '/assets/audio/slides/Giulio Quarta - CoFi - Collaborative Finance.pdf',
     },
     {
       title:
-        "Jeff Emmett: Learning from Nature's Greatest Evolutionary Algorithms",
+        "Learning from Nature's Greatest Evolutionary Algorithms",
+      speaker: 'Jeff Emmett',
       src: '/assets/audio/gfel-day-3-jeff-emmett-presentation.m4a',
       link: '/assets/audio/slides/Jeff Emmett - MycoFi Learning From Natures Greatest Algorithms.pdf',
     },
     {
       title: 'Panel: Cosmolocal Coordination',
+      speaker: 'with BorrowLucid, Ken Cenna, Anna Kaic and Benjamin Life',
       src: '/assets/audio/gfel-day-3-panel.m4a',
       link: '',
     },
     {
-      title: 'Sayer Tindall: Regenerative Finance in Practice',
+      title: 'Regenerative Finance in Practice',
+      speaker: 'Sayer Tindall',
       src: '/assets/audio/gfel-day-3-sayer-tindall-regenerative-finance-in-practice.m4a',
       link: '/assets/audio/slides/Sayer Tindall - From DeFi to Real-World Impact.pdf',
     },
@@ -169,7 +182,7 @@ const Localism = () => (
                 <Heading as="h3" mb={2} fontFamily="body" fontSize="2xl">
                   Day {i + 1}
                 </Heading>
-                {day.map(({ title, src, link }, j) => {
+                {day.map(({ title, speaker, src, link }, j) => {
                   const BORDER = '1px'
                   const BORDER_COLOR = 'blackAlpha.300'
                   return (
@@ -199,6 +212,8 @@ const Localism = () => (
                         borderBottomRadius="xl"
                       >
                         {title}
+                        <br/>
+                        {speaker}
                         <br/>
                         <Link
                           href={link}
