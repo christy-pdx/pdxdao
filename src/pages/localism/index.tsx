@@ -86,7 +86,7 @@ const audioData: Array<AudioTrack[]> = [
       link: '/assets/audio/slides/Jeff Emmett - MycoFi Learning From Natures Greatest Algorithms.pdf',
     },
     {
-      title: 'Panel: Cosmolocal Coordination',
+      title: 'Fishbowl Panel: Cosmolocal Coordination',
       speaker: 'with BorrowLucid, Ken Cenna, Anna Kaic, Benjamin Life and more!',
       src: '/assets/audio/gfel-day-3-panel.m4a',
       link: '',
