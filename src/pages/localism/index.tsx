@@ -22,7 +22,7 @@ const audioData: Array<AudioTrack[]> = [
   [
     {
       title: 'Introduction by PDX DAO',
-      speaker: 'with haughtvalue, christypdx, vengi, wackerow, macks, Exuent, Josh and Hodlon',
+      speaker: 'with haughtvalue, christypdx, vengi, Wackerow, MacksWolf, Exeunt, Josh and Hodlon',
       src: '/assets/audio/gfel-day-1-intro.m4a',
       link: '/assets/audio/slides/PDX DAO - GFEL Introduction.pdf',
     },
