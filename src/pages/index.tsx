@@ -83,12 +83,14 @@ const Home: FC = () => (
         
           
           Membership eligibility is a social
-          construct emergent from the relationships of participating orgs. As we grow as a coalition, we will be building out a decentralized 
-          governance model with an eye toward an on-chain democratic confederation.
+          construct emergent from the relationships of participating orgs. As we grow as a
+          coalition, we will be building out a decentralized governance model with an eye
+          toward an on-chain democratic confederation.
           </Text> 
           <Text>
-          <Link href="https://twitter.com/EthForestDAO">Ethereal Forest</Link> is currently engaging in research and community
-          outreach to work toward this participatory cityDAO infrastructure.        
+          <Link href="https://twitter.com/EthForestDAO">Ethereal Forest</Link> is currently
+          engaging in research and community outreach to work toward this participatory
+          cityDAO infrastructure.        
           </Text>
         </TextCardWithIcon>
       </Section>
@@ -100,12 +102,9 @@ const Home: FC = () => (
           icon={FaRegGrinBeam}
         >
           <Text>
-            Anyone who is interested in building in web3 on Ethereum, while
-            actively contributing to our community. All DAO members can submit
-            proposals to the group. Trusted DAO members gain proposal approval
-            rights and scaled voting power. An individual is welcome to forge
-            their own path to DAO membership through active community
-            involvement.
+          Individuals and organizations interested in decentralized governance, community
+          organizing, and doing cool shit with web3 technology: DAOs in the Portland Area,
+          organizations interested in becoming DAOs, and individuals looking to join DAOs. 
           </Text>
         </TextCardWithIcon>
       </Section>
