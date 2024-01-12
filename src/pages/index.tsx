@@ -14,11 +14,9 @@ const Home: FC = () => (
     </Text>
     <Section maxW="70ch">
       <Text>
-        <strong>{SITE_NAME}</strong> is an IRL DAO based in Portland, Oregon,
-        whose members share an interest in the implementation and application of{' '}
-        <Link href="https://ethereum.org">Ethereum</Link> and web3 technologies,
-        tools and decentralized systems, as a means to promote the Ethereum
-        ecosystem while benefiting our local community.
+        <strong>{SITE_NAME}</strong> is a Portland, Oregon-based coalition of DAOs
+        organizing for the advancement of decentralized technologies and protocols
+        as a means of creating a more regenerative, peaceful city 🕊️
       </Text>
     </Section>
     <Section
@@ -75,21 +73,22 @@ const Home: FC = () => (
     <Flex direction="column" gap={16} my={32} sx={{ section: { mb: 0 } }}>
       <Section maxW="max">
         <TextCardWithIcon
-          title="What does PDX DAO do?"
+          title="How does PDX DAO work?"
           fadeColor="secondary"
           icon={GiFlexibleStar}
         >
           <Text>
-            We organize to support community-level thriving—manifested in a
-            growing variety of ways, including organizing meetup and educational
-            events, and offering web3-related opportunities for local creators.
-            We work together collaboratively to produce projects that benefit
-            the community.
-          </Text>
+          PDX DAO functions as a permissionless coalition of DAOs.
+          Anyone can create a DAO in the PDX DAO ecosystem and any DAO can join the ecosystem.
+        
+          
+          Membership eligibility is a social
+          construct emergent from the relationships of participating orgs. As we grow as a coalition, we will be building out a decentralized 
+          governance model with an eye toward an on-chain democratic confederation.
+          </Text> 
           <Text>
-            <Link href="https://pdx-dao.gitbook.io/pdx-dao-docs/">
-              Read the docs
-            </Link>
+          <Link href="https://twitter.com/EthForestDAO">Ethereal Forest</Link> is currently engaging in research and community
+          outreach to work toward this participatory cityDAO infrastructure.        
           </Text>
         </TextCardWithIcon>
       </Section>
