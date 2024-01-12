@@ -16,7 +16,7 @@ const Home: FC = () => (
       <Text>
         <strong>{SITE_NAME}</strong> is a Portland, Oregon-based coalition of DAOs
         organizing for the advancement of decentralized technologies and protocols
-        as a means of creating a more regenerative, peaceful city 🕊️
+        as a means of creating a more regenerative and peaceful city 🕊️
       </Text>
     </Section>
     <Section
